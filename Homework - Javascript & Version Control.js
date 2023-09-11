@@ -66,12 +66,28 @@ function buatArrayRandom(panjangArray) {
     const rataRataGenap = hitungRataRata(arrayGenap);
     const rataRataGanjil = hitungRataRata(arrayGanjil);
   
-    return {
-      min: minGenap > minGanjil ? "Min lebih besar array genap" : "Min lebih besar array ganjil",
-      max: maxGanjil > maxGenap ? "Max lebih besar array ganjil" : "Max lebih besar array genap",
-      total: totalGenap === totalGanjil ? "Total memiliki nilai sama antara array genap dan ganjil" : "Total berbeda antara array genap dan ganjil",
-      rataRata: rataRataGanjil > rataRataGenap ? "Rata rata lebih besar array ganjil" : "Rata rata lebih besar array genap"
-    };
+    let hasilPerbandingan = {};
+    if (minGenap === minGanjil) {
+      hasilPerbandingan.min = "Min array genap sama dengan min array ganjil";
+    } else {
+      hasilPerbandingan.min = minGenap > minGanjil ? "Min lebih besar array genap" : "Min lebih besar array ganjil";
+    }
+    if (maxGenap === maxGanjil) {
+      hasilPerbandingan.max = "Max array genap sama dengan max array ganjil";
+    } else {
+      hasilPerbandingan.max = maxGanjil > maxGenap ? "Max lebih besar array ganjil" : "Max lebih besar array genap";
+    }
+    if (totalGenap === totalGanjil) {
+      hasilPerbandingan.total = "Total memiliki nilai sama antara array genap dan ganjil";
+    } else {
+      hasilPerbandingan.total = "Total berbeda antara array genap dan ganjil";
+    }
+    if (rataRataGenap === rataRataGanjil) {
+      hasilPerbandingan.rataRata = "Rata-rata array genap sama dengan rata-rata array ganjil";
+    } else {
+      hasilPerbandingan.rataRata = rataRataGanjil > rataRataGenap ? "Rata-rata lebih besar array ganjil" : "Rata-rata lebih besar array genap";
+    }
+    return hasilPerbandingan;
   }
   
   // Membuat array dengan nilai acak
