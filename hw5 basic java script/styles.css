@@ -1,0 +1,123 @@
+body {
+    /* Menggunakan gambar latar belakang */
+    background-image: url('https://i.pinimg.com/originals/38/78/af/3878af3ee5751ff2fe561465cd32099c.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; 
+    
+}
+
+/* Container utama */
+.container {
+    max-width: 800px; 
+    padding: 20px;
+    background-color: rgba(8, 8, 8, 0.406);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk teks judul (h1 dan h2) */
+h1, h2 {
+    font-family: sans-serif;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Gaya untuk tab */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol tab */
+.tab-button {
+    border: none;
+    padding: 9px 20px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.tab-button:hover {
+    background-color: #666666;
+    color: #ffffff;
+}
+
+/* Gaya untuk konten tab */
+.tab-content {
+    display: none;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    
+}
+
+/* Gaya label dalam formulir */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+/* Gaya input dalam formulir */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* Gaya tombol submit dalam formulir */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f90404;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Gaya tabel */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #ffffff;
+}
+
+/* Gaya untuk sel header tabel */
+th {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Gaya untuk sel data tabel */
+td {
+    border: 1px solid #cccccc; 
+    padding: 10px;
+    text-align: center;
+}
